@@ -25,6 +25,7 @@ import LocalStorageCachingStrategy from "./caching/LocalStorageCachingStrategy.j
 import InMemoryCachingStrategy from "./caching/InMemoryCachingStrategy.js";
 import ProvidedAccessTokenStrategy from "./auth/ProvidedAccessTokenStrategy.js";
 import type { AccessToken, SdkConfiguration, SdkOptions, AuthenticationResponse } from "./types.js";
+import fetch from 'node-fetch';
 
 export class SpotifyApi {
     private sdkConfig: SdkConfiguration;
